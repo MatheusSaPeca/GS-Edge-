@@ -21,17 +21,17 @@ Demonstrar a aplicação de conceitos de Edge Computing no monitoramento climát
 
  **Componentes Utilizados**
 
-Arduino Uno
-Display LCD 16x2
-Potenciômetro (simulando sensor de chuva)
-LED Verde
-LED Amarelo
-LED Laranja
-LED Vermelho
-Buzzer
-Resistores de 220Ω
-Protoboard
-Jumpers
+Arduino Uno;
+Display LCD 16x2;
+Potenciômetro (simulando sensor de chuva);
+LED Verde;
+LED Amarelo;
+LED Laranja;
+LED Vermelho;
+Buzzer;
+Resistores de 220Ω;
+Protoboard;
+Jumpers;
  
 **Explicação do Funcionamento**
 
@@ -48,19 +48,19 @@ O sistema realiza leituras contínuas do sensor de chuva simulado através de um
 
  **Estrutura do Circuito**
 
--Entradas
-Potenciômetro (Sensor de Chuva Simulado)
+-Entradas:
+Potenciômetro (Sensor de Chuva Simulado);
 
--Processamento
-Arduino Uno
+-Processamento:
+Arduino Uno;
 
--Saídas
-Display LCD 16x2
-LED Verde
-LED Amarelo
-LED Laranja
-LED Vermelho
-Buzzer
+-Saídas:
+Display LCD 16x2;
+LED Verde;
+LED Amarelo;
+LED Laranja;
+LED Vermelho;
+Buzzer;
 
 **Fluxo do Sistema**
 
@@ -88,14 +88,14 @@ Utilizando o Wokwi
 
 **Tecnologias Utilizadas**
 
--Arduino C++
--Wokwi Simulator
--GitHub
+-Arduino C++;
+-Wokwi Simulator;
+-GitHub;
 
 **Integrantes do Grupo**
 
--Matheus Sá Teles de Souza
--Pedro Antônio Borges
--Guilherme Cunha Romano
--Guilherme Alvejan
+-Matheus Sá Teles de Souza;
+-Pedro Antônio Borges;
+-Guilherme Cunha Romano;
+-Guilherme Alvejan;
  
