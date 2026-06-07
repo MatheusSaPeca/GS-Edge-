@@ -14,23 +14,37 @@ O objetivo do projeto é monitorar o nível de chuva em um ambiente e informar o
 A solução busca:
 
 Simular a detecção de chuva;
+
 Exibir informações de forma visual e intuitiva;
+
 Utilizar indicadores luminosos para representar diferentes níveis de chuva;
+
 Emitir alerta sonoro em situações de chuva intensa;
+
 Demonstrar a aplicação de conceitos de Edge Computing no monitoramento climático.
 
  **Componentes Utilizados**
 
 Arduino Uno;
+
 Display LCD 16x2;
+
 Potenciômetro (simulando sensor de chuva);
+
 LED Verde;
+
 LED Amarelo;
+
 LED Laranja;
+
 LED Vermelho;
+
 Buzzer;
+
 Resistores de 220Ω;
+
 Protoboard;
+
 Jumpers;
  
 **Explicação do Funcionamento**
@@ -38,9 +52,12 @@ Jumpers;
 O sistema realiza leituras contínuas do sensor de chuva simulado através de um potenciômetro conectado ao Arduino.
  Faixa    | Situação             
  
- Verde    | Risco OK (sem chuva) 
- Amarelo  | Chuva Fraca          
- Laranja  | Chuva Moderada       
+ Verde    | Risco OK (sem chuva)
+ 
+ Amarelo  | Chuva Fraca 
+ 
+ Laranja  | Chuva Moderada      
+ 
  Vermelho | Chuva Intensa 
 
  As informações são exibidas no display LCD e também registradas no Monitor Serial.
@@ -65,12 +82,17 @@ Buzzer;
 **Fluxo do Sistema**
 
 Sensor de Chuva
+
        ↓
+       
    Arduino Uno
+   
        ↓
  
   LCD 16x2     
-  LEDs         
+  
+  LEDs       
+  
   Buzzer 
 
 **Instruções de Execução**
@@ -89,13 +111,18 @@ Utilizando o Wokwi
 **Tecnologias Utilizadas**
 
 -Arduino C++;
+
 -Wokwi Simulator;
+
 -GitHub;
 
 **Integrantes do Grupo**
 
 -Matheus Sá Teles de Souza;
+
 -Pedro Antônio Borges;
+
 -Guilherme Cunha Romano;
+
 -Guilherme Alvejan;
  
