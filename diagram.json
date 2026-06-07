@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "author": "Global Solution 2026 - Edge Computing",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 310, "left": 260, "attrs": {} },
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 25.8, "left": 22, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": -170,
+      "left": 130,
+      "attrs": { "pins": "full" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot",
+      "top": 75.8,
+      "left": 57,
+      "attrs": { "label": "Sensor de Chuva" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledGreen",
+      "top": 80,
+      "left": 420,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledYellow",
+      "top": 80,
+      "left": 470,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledOrange",
+      "top": 80,
+      "left": 520,
+      "attrs": { "color": "orange" }
+    },
+    { "type": "wokwi-led", "id": "ledRed", "top": 80, "left": 570, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "rGreen",
+      "top": 160,
+      "left": 415,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rYellow",
+      "top": 160,
+      "left": 465,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rOrange",
+      "top": 155.8,
+      "left": 517,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRed",
+      "top": 155.8,
+      "left": 567,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer",
+      "top": 95,
+      "left": 680,
+      "attrs": { "volume": "0.5" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "lcd:VSS", "black", [] ],
+    [ "uno:5V", "lcd:VDD", "red", [] ],
+    [ "uno:GND.1", "lcd:V0", "black", [] ],
+    [ "uno:12", "lcd:RS", "green", [] ],
+    [ "uno:GND.1", "lcd:RW", "black", [] ],
+    [ "uno:13", "lcd:E", "blue", [] ],
+    [ "uno:2", "lcd:D4", "purple", [] ],
+    [ "uno:3", "lcd:D5", "orange", [] ],
+    [ "uno:4", "lcd:D6", "yellow", [] ],
+    [ "uno:5", "lcd:D7", "brown", [] ],
+    [ "uno:5V", "lcd:A", "red", [] ],
+    [ "uno:GND.1", "lcd:K", "black", [] ],
+    [ "pot:SIG", "uno:A0", "orange", [] ],
+    [ "pot:VCC", "uno:5V", "red", [] ],
+    [ "pot:GND", "uno:GND.1", "black", [] ],
+    [ "uno:8", "rGreen:1", "green", [] ],
+    [ "rGreen:2", "ledGreen:A", "green", [] ],
+    [ "ledGreen:C", "uno:GND.1", "black", [] ],
+    [ "uno:9", "rYellow:1", "yellow", [] ],
+    [ "rYellow:2", "ledYellow:A", "yellow", [] ],
+    [ "ledYellow:C", "uno:GND.1", "black", [] ],
+    [ "uno:10", "rOrange:1", "orange", [] ],
+    [ "rOrange:2", "ledOrange:A", "orange", [] ],
+    [ "ledOrange:C", "uno:GND.1", "black", [] ],
+    [ "uno:7", "rRed:1", "red", [] ],
+    [ "rRed:2", "ledRed:A", "red", [] ],
+    [ "ledRed:C", "uno:GND.1", "black", [] ],
+    [ "uno:11", "buzzer:1", "blue", [] ],
+    [ "uno:GND.1", "buzzer:2", "black", [] ],
+    [ "pot:GND", "bb1:5b.f", "", [ "$bb" ] ],
+    [ "pot:SIG", "bb1:6b.f", "", [ "$bb" ] ],
+    [ "pot:VCC", "bb1:7b.f", "", [ "$bb" ] ],
+    [ "rOrange:1", "bb1:50b.h", "", [ "$bb" ] ],
+    [ "rOrange:2", "bb1:56b.h", "", [ "$bb" ] ],
+    [ "rRed:1", "bb1:55b.h", "", [ "$bb" ] ],
+    [ "rRed:2", "bb1:61b.h", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
